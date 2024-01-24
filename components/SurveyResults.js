@@ -7,6 +7,7 @@ import {
   PointElement,
   LinearScale,
   RadialLinearScale,
+  Filler,
   Title,
 } from 'chart.js';
 
@@ -15,7 +16,8 @@ ChartJS.register(
   PointElement,
   RadialLinearScale,
   LinearScale,
-  Title
+  Title,
+  Filler
 );
 
 const SurveyResults = ({ survey, answers, formattedChartData }) => {
