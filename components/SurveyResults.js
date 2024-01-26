@@ -17,7 +17,7 @@ ChartJS.register(
   RadialLinearScale,
   LinearScale,
   Title,
-  Filler
+  Filler,
 );
 
 const SurveyResults = ({ survey, answers, formattedChartData }) => {
