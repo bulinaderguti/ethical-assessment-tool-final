@@ -29,7 +29,7 @@ const SurveyResults = ({ survey, answers, formattedChartData }) => {
     scales: {
       r: {
         angleLines: {
-          display: false,
+          display: true,
         },
         suggestedMin: 0,
         suggestedMax: 100,
@@ -40,15 +40,15 @@ const SurveyResults = ({ survey, answers, formattedChartData }) => {
             let label = 'Low';
 
             if (value >= 0 && value <= 20) {
-              label = 'Low - 20%';
+              label = '20%';
             } else if (value >= 21 && value <= 40) {
-              label = 'Medium - 40%';
+              label = '40%';
             } else if (value >= 41 && value <= 60) {
-              label = 'Moderate - 60%';
+              label = '60%';
             } else if (value >= 61 && value <= 80) {
-              label = 'High - 80%';
+              label = '80%';
             } else if (value >= 91 && value <= 100) {
-              label = 'Very High - 100%';
+              label = '100%';
             }
 
             return label; // Return the label for each value
@@ -206,7 +206,9 @@ const SurveyResults = ({ survey, answers, formattedChartData }) => {
       >
         <h3 style={{ fontSize: '1.5rem', marginBottom: '20px' }}>
           Spider Chart
+          
         </h3>
+       <p>The "20" percentage indicates a low adherence to ethical standards, while a "80" percentage indicates a system with strong ethical integrity. </p>
         <div
           style={{
             margin: 'auto',
