@@ -208,7 +208,7 @@ const SurveyResults = ({ survey, answers, formattedChartData }) => {
           Spider Chart
           
         </h3>
-       <p>The "20" percentage indicates a low adherence to ethical standards, while a "80" percentage indicates a system with strong ethical integrity. </p>
+       <p>The &quot;20&quot; percentage indicates a low adherence to ethical standards, while a &quot;80&quot; percentage indicates a system with strong ethical integrity. </p>
         <div
           style={{
             margin: 'auto',
